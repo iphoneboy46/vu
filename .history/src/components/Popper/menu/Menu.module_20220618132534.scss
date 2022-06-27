@@ -1,0 +1,18 @@
+//menu wrapper
+.menu-list {
+    width: 224px;
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: border;
+        min-width: 100px;
+        padding: 9px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        background-color: #fff;
+        user-select: none;
+    }
+}
