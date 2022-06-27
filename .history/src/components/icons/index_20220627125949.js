@@ -15,7 +15,7 @@ export const UploadIcon = ({ width = '32px', height = '32px', className }) => (
     </svg>
 );
 
-export const MessageIcon = ({ width = '26px', height = '32px', className }) => (
+export const MessageIcon = ({ width = '26px', height = '26px', className }) => (
     <svg
         className={className}
         width={width}
@@ -32,7 +32,7 @@ export const MessageIcon = ({ width = '26px', height = '32px', className }) => (
     </svg>
 );
 
-export const InboxIcon = ({ width = '32px', height = '32px', className }) => (
+export const InboxIcon = ({ width = '32px', height = '3.2rem', className }) => (
     <svg
         className={className}
         width={width}

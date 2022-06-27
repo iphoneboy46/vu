@@ -8,6 +8,7 @@ import {
     faCircleNotch,
     faCircleQuestion,
     faCircleXmark,
+    faCloudUpload,
     faCoins,
     faEarthAsia,
     faEllipsisVertical,
@@ -28,7 +29,6 @@ import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/menu';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/icons';
-import Image from '~/components/image';
 
 const cx = classNames.bind(styles);
 
@@ -151,29 +151,27 @@ function Header() {
                                 content="Upload Video"
                                 placement='bottom'
                                 delay={[0, 200]}
-                                offset={[0, 5]}
+                                offset={[0, 20]}
                             >
                                 <button className={cx('action-btn')}>
                                     <UploadIcon />
                                 </button>
                             </Tippy>
-
                             <Tippy
                                 content="Message"
                                 placement='bottom'
                                 delay={[0, 200]}
-                                offset={[0, 5]}
+                                offset={[10]}
                             >
                                 <button className={cx('action-btn')}>
                                     <MessageIcon />
                                 </button>
                             </Tippy>
-
                             <Tippy
                                 content="Inbox"
                                 placement='bottom'
                                 delay={[0, 200]}
-                                offset={[0, 5]}
+                                offset={[10]}
                             >
                                 <button className={cx('action-btn')}>
                                     <InboxIcon />
@@ -195,9 +193,7 @@ function Header() {
                     >
                         {currentUser ?
                             (
-                                <Image src="https://tse1.mm.bing.net/th?id=OIP.lsaqXiF1qoA0lNGxssv4dQHaFy&pid=Api&P=0&w=221&h=172" className={cx('user-avatar')} alt="Nguyen Van A"
-                                    fallback="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/66bfd3dbbf06a621512f7acd3ed53498~c5_100x100.jpeg?x-expires=1656482400&x-signature=qTqHJbSVQ4Etw2Hp62vW%2BwSTGEI%3D"
-                                />
+                                <img src="https://tse1.mm.bing.net/th?id=OIP.lsaqXiF1qoA0lNGxssv4dQHaFy&pid=Api&P=0&w=221&h=172" className={cx('user-avatar')} alt="Nguyen Van A" />
                             )
                             :
                             (
